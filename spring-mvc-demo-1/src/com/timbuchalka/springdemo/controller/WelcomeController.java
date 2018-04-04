@@ -22,7 +22,7 @@ public class WelcomeController {
 		// 2. Add data to the model
 		model.addAttribute("myWelcomeMessage", welcomeMessage);
 		
-		return "";
+		return "weolcomeNew"; // name of the view (jsp)
 	}
 
 }
