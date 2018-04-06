@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<psf version="2.0">
+<provider id="org.eclipse.egit.core.GitProvider">
+<project reference="1.0,https://github.com/jordiraya/SpringCourse.git,master,JavaSpringDemo"/>
+<project reference="1.0,https://github.com/jordiraya/SpringCourse.git,master,mavendemo"/>
+<project reference="1.0,https://github.com/jordiraya/SpringCourse.git,master,spring-bean-factory-demo"/>
+<project reference="1.0,https://github.com/jordiraya/SpringCourse.git,master,spring-bean-scope-demo"/>
+<project reference="1.0,https://github.com/jordiraya/SpringCourse.git,master,spring-bean-web-scope-demo"/>
+<project reference="1.0,https://github.com/jordiraya/SpringCourse.git,master,spring-cnamespace-demo"/>
+<project reference="1.0,https://github.com/jordiraya/SpringCourse.git,master,spring-constructor-args-demo"/>
+<project reference="1.0,https://github.com/jordiraya/SpringCourse.git,master,spring-di-constructor-demo"/>
+<project reference="1.0,https://github.com/jordiraya/SpringCourse.git,master,spring-di-demo"/>
+<project reference="1.0,https://github.com/jordiraya/SpringCourse.git,master,spring-init-destroy-demo-1"/>
+<project reference="1.0,https://github.com/jordiraya/SpringCourse.git,master,spring-ioc-demo-1"/>
+<project reference="1.0,https://github.com/jordiraya/SpringCourse.git,master,spring-ioc-demo-2"/>
+<project reference="1.0,https://github.com/jordiraya/SpringCourse.git,master,spring-ioc-demo-challenge"/>
+<project reference="1.0,https://github.com/jordiraya/SpringCourse.git,master,spring-mvc-demo-1"/>
+<project reference="1.0,https://github.com/jordiraya/SpringCourse.git,master,spring-setter-demo"/>
+</provider>
+</psf>
