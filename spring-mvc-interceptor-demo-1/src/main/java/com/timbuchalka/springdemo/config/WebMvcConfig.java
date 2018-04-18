@@ -7,9 +7,14 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.lookup.JndiDataSourceLookup;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
 import org.springframework.web.servlet.view.JstlView;
 import org.springframework.web.servlet.view.UrlBasedViewResolver;
+
+import com.timbuchalka.springdemo.interceptors.HeaderInterceptor;
 
 // replaces config-servlet.xml
 
@@ -29,6 +34,16 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
 		return dataSource;
 	}
 	
+/*	
+	@Bean
+	public RequestMappingHandlerMapping requestMappingHandlerMapping() {
+		RequestMappingHandlerMapping rmhm = new RequestMappingHandlerMapping();
+		rmhm.setUseSuffixPatternMatch(true);
+		rmhm.setUseTrailingSlashMatch(true);
+		return rmhm;
+	}
+*/
+	
 	@Bean
 	public UrlBasedViewResolver urlBasedViewResolver() {
 		UrlBasedViewResolver resolver = new UrlBasedViewResolver();
@@ -36,6 +51,17 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
 		resolver.setSuffix(".jsp");
 		resolver.setViewClass(JstlView.class);
 		return resolver;
+	}
+	
+	@Override
+	public void addViewControllers(ViewControllerRegistry registry) {
+		registry.addViewController("/").setViewName("home");
+		// <mvc:view-controller path="/" view-name="home"/>
+	}
+
+	@Override
+	public void addInterceptors(InterceptorRegistry registry) {
+		registry.addInterceptor(new HeaderInterceptor());
 	}
 	
 }
