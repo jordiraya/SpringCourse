@@ -14,7 +14,7 @@
 </head>
 
 <body>
-	<h2>(test3) Ooops!!! We aere extremely sorry! IT seems we are a little lost (Error code 404)</h2>
+	<h2>(test3) Ooops!!! We are extremely sorry! IT seems we are a little lost (Error code 404)</h2>
 	<h3 style="color:#08298A">Are yoy trying to access a page that doesn't exist?</h3>
 </body>
 </html>
