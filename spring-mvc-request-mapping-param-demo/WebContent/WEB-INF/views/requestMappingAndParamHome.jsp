@@ -52,7 +52,24 @@
 		<form action="test3">
 			<h3>test 3: Testing @RequestParam fall back feature</h3>
 			<input type="submit" value="Submit"/>
-		</form>		
+		</form>	
+		<br/>
+		<br/>
+		<form action="test4">
+			<h3>test 4: Testing @RequestParam 'defaultValue' attributes</h3>
+			<label id="organization-name">Organization Name</label>
+			<input type="text" name="orgname" placeholder="Enter organization name" size="40">
+			<input type="submit" value="Submit"/>
+		</form>
+		<br/>
+		<br/>
+		<form action="test5">
+			<h3>test 5: Testing @RequestParam without 'name' or 'value' attributes</h3>
+			<label id="organization-name">Organization Name</label>
+			<input type="text" name="orgname" placeholder="Enter organization name" size="40">
+			<input type="submit" value="Submit"/>
+		</form>
+		<br/>	
 	</div>
 </body>
 </html>
