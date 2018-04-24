@@ -20,6 +20,7 @@
 	<div style="text-align:center">
 		<a href="${contextPath}/requestMappingAndParamDemo/home" style="font-size: 20px">Click here to go to the test bed for @RequestMapping and @RequestParam annotations</a><br/>
 		<a href="${contextPath}/home5" style="font-size: 20px">Click here to go to the test bed for @ModelAttribute annotation</a><br/>
+		<a href="${contextPath}/visitorRegister/home" style="font-size: 20px">Click here to go to the test bed for @SessionAttribute annotation</a><br/>	
 	</div>
 </body>
 </html>
