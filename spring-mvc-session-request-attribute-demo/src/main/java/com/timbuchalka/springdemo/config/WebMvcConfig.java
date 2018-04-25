@@ -17,6 +17,7 @@ import org.springframework.web.servlet.view.UrlBasedViewResolver;
 
 import com.timbuchalka.springdemo.interceptors.ExecutionTimerInterceptor;
 import com.timbuchalka.springdemo.interceptors.HeaderInterceptor;
+import com.timbuchalka.springdemo.interceptors.VisitorInterceptor;
 
 // replaces config-servlet.xml
 
@@ -27,6 +28,9 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
 
 	@Autowired
 	private HeaderInterceptor headerInterceptor;
+	
+	@Autowired
+	private VisitorInterceptor visitorInterceptor;
 	
 	@Autowired
 	private ExecutionTimerInterceptor executionTimerInterceptor;	
@@ -60,6 +64,7 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
 		registry.addInterceptor(headerInterceptor);
+		registry.addInterceptor(visitorInterceptor);
 		registry.addInterceptor(executionTimerInterceptor).addPathPatterns("/location");
 	}
 
