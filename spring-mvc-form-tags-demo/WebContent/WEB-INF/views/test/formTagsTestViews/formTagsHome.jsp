@@ -23,6 +23,44 @@
 					<td><form:input path="orgName" placeholder="Enter Organization name" /></td>
 				</tr>
 				<tr>
+					<td><form:label path="country">Country</form:label></td>
+					<td>
+						<form:select path="country">
+							<form:option value="NONE">-----SELECT-----</form:option>
+							<form:option value="Australia">Australia</form:option>
+							<form:option value="India">India</form:option>
+							<form:option value="Sweden">Sweden</form:option>
+							<form:option value="United States">United States</form:option>
+							<form:option value="Egypt">Egypt</form:option>
+						</form:select>
+					</td>
+				</tr>		
+				<tr>
+					<td><form:label path="turnover">Turnover</form:label></td>
+					<td><form:select path="turnover" items="${turnoverlist}"/></td>
+				</tr>					
+				<tr>
+					<td><form:label path="type">Type</form:label></td>
+					<td>
+						<form:select path="type">
+							<form:option value="NONE">-----SELECT-----</form:option>
+							<form:options items="${typelist}"/>
+						</form:select>
+					</td>
+				</tr>	
+				<tr>
+					<td><form:label path="serviceLength">Organization Age</form:label></td>
+					<td><form:select path="serviceLength" items="${serviceLengthList}"/></td>
+				</tr>	
+				<tr>
+					<td><form:label path="registeredPreviously">Registered Previously</form:label></td>
+					<td><form:checkbox path="registeredPreviously" items="${registeredPreviouslyList}"/></td>
+				</tr>
+				<tr>
+					<td><form:label path="like">Like our website</form:label></td>
+					<td><form:checkbox path="like" value="yes" />Like</td>
+				</tr>															
+				<tr>
 					<td></td>
 					<td align="center"><input type="submit" value="submit" /></td>
 				</tr>

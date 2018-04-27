@@ -17,6 +17,47 @@
 	<hr/>
 	<div style="margin-left:600px; width:auto">
 		<h3>Organization Name: <b>${orgreg.orgName}</b></h3>
+		<h3>Country: <b>${orgreg.country}</b></h3>
+		
+		<h3>Turnover:
+			<c:forEach var="entry" items="${turnoverlist}">
+				<c:if test="${orgreg.turnover eq entry.key}">
+					<b>${entry.value}</b>
+				</c:if>
+			</c:forEach>
+		</h3>
+		
+		<h3>Type:
+			<c:forEach var="entry" items="${typelist}">
+				<c:if test="${orgreg.type eq entry.key}">
+					<b>${entry.value}</b>
+				</c:if>
+			</c:forEach>
+		</h3>
+		
+		<h3>Organization Age:
+			<c:forEach var="entry" items="${serviceLengthList}">
+				<c:if test="${orgreg.serviceLength eq entry.key}">
+					<b>${entry.value}</b>
+				</c:if>
+			</c:forEach>
+		</h3>	
+		
+		<h3>Registered Previously:
+			<c:forEach var="entry" items="${registeredPreviouslyList}">
+				<c:if test="${orgreg.registeredPreviously eq entry.key}">
+					<b>${entry.value}</b>
+				</c:if>
+			</c:forEach>
+		</h3>
+			
+		<h3>Like our website:
+			<c:choose>
+				<c:when test="${orgreg.like eq 'yes'}"><b>Like</b></c:when>
+				<c:otherwise><b>Do not like</b></c:otherwise>
+			</c:choose>
+		</h3>			
+							
 	</div>
 </body>
 </html>
