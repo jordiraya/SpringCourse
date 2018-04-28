@@ -9,6 +9,10 @@ public class OrganizationRegistration {
 	private String serviceLength;
 	private boolean registeredPreviously = true;
 	private String like;
+	private String[] optionalServices;
+	private String[] premiumServices;
+	private String overseasOperations;
+	private String employeeStrength;
 	
 	public String getOrgName() {
 		return orgName;
@@ -64,6 +68,38 @@ public class OrganizationRegistration {
 
 	public void setLike(String like) {
 		this.like = like;
+	}
+
+	public String[] getOptionalServices() {
+		return optionalServices;
+	}
+
+	public void setOptionalServices(String[] optionalServices) {
+		this.optionalServices = optionalServices;
+	}
+
+	public String[] getPremiumServices() {
+		return premiumServices;
+	}
+
+	public void setPremiumServices(String[] premiumServices) {
+		this.premiumServices = premiumServices;
+	}
+
+	public String getOverseasOperations() {
+		return overseasOperations;
+	}
+
+	public void setOverseasOperations(String overseasOperations) {
+		this.overseasOperations = overseasOperations;
+	}
+
+	public String getEmployeeStrength() {
+		return employeeStrength;
+	}
+
+	public void setEmployeeStrength(String employeeStrength) {
+		this.employeeStrength = employeeStrength;
 	}
 	
 }
