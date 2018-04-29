@@ -1,44 +1,52 @@
-label{
+.clabel{
+    font-size: 18px;
+}
+ 
+.cinput{
+    padding: 5px;
+    margin: 5px;
     font-size: 15px;
+    size: 50px
 }
  
-input[type=text]{
-    padding: 7px;
-    margin: 7px;
-    font-size: 15px
-}
- 
-input[type=submit]{
+.csubmit{
     border: none;
     background-color: #4CAF50;
     color: white;
-    padding: 16px;
-    margin: 16px;
+    padding: 8px;
+    margin: 20px;
     cursor: pointer;
     font-size: 20px
 }
  
-h1, h2{
+.cpassword{
+    padding: 5px;
+    margin: 5px;
+    font-size: 15px;
+    size: 50px
+}
+ 
+.ch1, .ch2{
     color: #08298A;
     text-align: center
 }
  
-ul{
+.cul{
     list-style-type:none;
     margin:0;
     padding: 0
 }
  
-b{
+.cb{
     color:#DF0101
 }
  
-select{
-    padding: 7px;
-    margin: 7px;
-    font-size: 15px
+.cselect{  
+    padding: 2px;
+    margin: 4px;
+    font-size: 14px
 }
  
-div{
-    align: center
+.errorx{
+    color:red
 }
