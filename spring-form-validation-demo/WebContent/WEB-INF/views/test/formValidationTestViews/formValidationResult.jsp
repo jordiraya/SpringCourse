@@ -16,14 +16,16 @@
 	<h2 class="ch2">Details are below:</h2>
 	<hr/>
 	<div style="margin-left: 600px; width: auto">
-		<h3>Name: <b class="cb">${orgrep.firstName}</b></h3>
+		<h3>Name: <b class="cb">${orgrep.firstName} ${orgrep.lastName}</b></h3>
+		<h3>Age: <b class="cb">${orgrep.age}</b></h3>
+		<h3>Zip Code: <b class="cb">${orgrep.zipCode}</b></h3>
+		<h3>Email: <b class="cb">${orgrep.email}</b></h3>
+		<h3>PAssword: <b class="cb">${orgrep.password}</b></h3>
 	</div>
 	<hr/>
 	<div align="center">
 		<c:set var="contextPath" value="${pageContext.request.contextPath}" />
-		<c:if test="${formerrors ne null}">
-			<a href="${contextPath}/formValidationDemo/home" style="font-size: 17px">Click here to go back to the home page</a>
-		</c:if>
+		<a href="${contextPath}/formValidationDemo/home" style="font-size: 17px">Click here to go back to the home page</a>
 	</div>
 </body>
 </html>
